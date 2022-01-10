@@ -39,12 +39,8 @@ def model_predict(img_path, model):
     score = tf.nn.softmax(predictions[0])
     preds=class_names[np.argmax(score)]
     # preds=class_names[np.argmax(predictions)]
-    # if preds==class_names[np.argmax(preds[0])]:
-    #     preds="The Person is Infected With covid"
-    # else:
-    #     preds="The Person is not Infected With covid"
-    
-    
+
+       
     return preds
 
 
